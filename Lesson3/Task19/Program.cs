@@ -9,13 +9,13 @@ int num = Convert.ToInt32(Console.ReadLine());
 
 bool number = Number(num);
 
-Console.WriteLine(num < 10000 || num >99999 ? "Введено не корректное число!" : number ? "Да" : "Нет");
+Console.WriteLine(num < 10000 || num > 99999 ? "Введено не корректное число!" : number ? "Да" : "Нет");
 
 bool Number(int Num)
 {
-int leftNum = Num /1000;
-int rightNumLast1 = (Num % 100) / 10;
-int rightNumLast2 = Num % 10;
-int rightNumLast = rightNumLast2 * 10 + rightNumLast1;
-return leftNum == rightNumLast;
+    int leftNum = Num / 1000;
+    int rightNumLast1 = (Num % 100) / 10;
+    int rightNumLast2 = Num % 10;
+    int rightNumLast = rightNumLast2 * 10 + rightNumLast1;
+    return leftNum == rightNumLast;
 }
