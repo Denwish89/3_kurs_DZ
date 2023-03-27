@@ -26,7 +26,7 @@ void PrintArray(int[] arrayValue)
     for (int i = 0; i < arrayValue.Length; i++)
     {
         if (i != arrayValue.Length - 1) Console.Write($"{arrayValue[i]}, ");
-        else Console.Write($"{arrayValue[i]}\n");
+        else Console.Write($"{arrayValue[i]}");
     }
 }
 
